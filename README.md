@@ -1,36 +1,52 @@
-# Comprehensive Hardware Health Check Script
+# Interactive Diagnostic Script for Windows Systems
 
-The Comprehensive Hardware Health Check Script is a powerful and versatile tool designed to assess and report the health of various hardware components on a Windows-based system. This script provides a comprehensive overview of your system's hardware health status, ensuring that potential issues are identified and addressed in a timely manner.
+![Interactive Diagnostic Script Banner](banner.png)
+
+## Overview
+
+This interactive PowerShell script provides a comprehensive way to collect diagnostic information from Windows operating systems. It allows you to gather details about the operating system, hardware, software, user activity, event logs, network information, and more. The script also includes functionalities to compress gathered data, check files with the VirusTotal API, and run memory diagnostics.
+
+The script is intended to help system administrators, cybersecurity professionals, and enthusiasts to quickly and efficiently collect crucial system information for analysis and troubleshooting.
 
 ## Features
 
-- **Interactive Start:** The script greets users with an ASCII art logo and the author's name, creating an engaging and informative introduction to the hardware health check process.
+- Collects system information, hardware details, and software components.
+- Checks files with the VirusTotal API for potential threats.
+- Runs memory diagnostics to identify memory-related issues.
+- Collects network information, open ports, and running services.
+- Retrieves event logs, recent user activity, and system performance metrics.
+- Provides an interactive menu-driven interface for easy usage.
+- Supports compressing gathered data for easy sharing.
+- Includes MimiKatz functionality for security assessment.
 
-- **Physical Drives Check:** The script scans for fixed hard disk media using Win32_DiskDrive and performs health checks on each drive. It displays the progress using a loading animation and provides details on the health status of each drive.
+## Prerequisites
 
-- **System Event Logs:** The script examines the system event logs for critical errors, displaying relevant information such as the date, source, event ID, and message of each error. Critical errors are logged to a file named "EventlogsErrors.txt" for further analysis.
-
-- **Network Connectivity Check:** The script tests network connectivity to Google by pinging the website. It provides the round-trip time of the ping response, giving users an indication of their network's health and performance.
-
-- **Installed Drivers Check:** The script checks for installed drivers using the Win32_PnPSignedDriver class and displays information about each driver, including the device name, driver name, and status.
-
-- **Memory Test Information:** Users are informed about the upcoming Windows Memory Diagnostic, which requires a system restart. This step prepares users for running memory tests to identify potential memory-related issues.
-
-- **User-Friendly:** The script uses loading animations and progress indicators to provide a visually appealing and user-friendly experience.
+- Windows operating system.
+- PowerShell execution policy set to at least `RemoteSigned`.
+- Administrator privileges (Run as Administrator).
+- Internet connectivity for VirusTotal API checks.
 
 ## Usage
 
-1. Run the script in PowerShell on a Windows system.
-
-2. Follow the interactive prompts and press Enter to initiate the hardware health checks.
-
-3. Review the outputs of each test, including drive health, critical event logs, network connectivity, installed drivers, and memory test information.
-
-4. Utilize the information provided to proactively address any hardware or system issues, improving the overall performance and reliability of your system.
+1. Clone or download the repository to your local system.
+2. Open PowerShell with Administrator privileges.
+3. Navigate to the script's directory.
+4. Run the script using `.\InteractiveDiagnosticScript.ps1`.
+5. Follow the on-screen instructions to choose and execute various functionalities.
 
 ## Author
 
-This script was authored by [Ali Emara](https://github.com/hithmast).
+Ali Emara
+- GitHub: [aliemara](https://github.com/hithmast)
+- Buy Me a Coffee: [Support the Author](https://www.buymeacoffee.com/aliemara)
+
+## Repository
+
+- GitHub Repository: [Interactive Diagnostic Script](https://github.com/hithmast/interactive-diagnostic-script)
+
+## Disclaimer
+
+This script is provided for educational and diagnostic purposes only. Use it responsibly and ensure compliance with all applicable laws and regulations. The author is not responsible for any misuse, damage, or unauthorized access resulting from the use of this script.
 
 ## License
 
