@@ -260,7 +260,8 @@ ________  .__          ____    _______    __________         .____    ________  
 /_______  /__\___  /   |___| /\ \_____  /  |______  // ____| |_______ \_______  /_______ \
         \/  /_____/          \/       \/          \/ \/              \/       \/        \/
 
-        with ❤ from Egypt
+        with ❤ from Egypt https://www.buymeacoffee.com/aliemara
+                          https://github.com/hithmast/hwtscript
 "@
     Log-Message "Interactive Shell for Diagnostic Information Collection" [ConsoleColor]::Cyan
     Log-Message "1. Collect system information and compress gathered data" [ConsoleColor]::Yellow
